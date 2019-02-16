@@ -31,3 +31,8 @@ function callback(results, status){
     document.ElementById('map').innerHTML('<p>Map not loaded.</p>');
   }
 }
+
+document.getElementById("submitSearch").addEventListener("click",function(event){
+  event.preventDefault();
+  initialize();
+});
